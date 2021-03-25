@@ -50,4 +50,4 @@
 *.recipe
 *.ilk
 *.log
-*.txt
+/x64/Debug/Hello-GitHub.vcxproj.FileListAbsolute.txt

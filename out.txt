@@ -1,0 +1,28 @@
+Starting...
+
+LibMat default constructor!
+
+LibMat default constructor!
+
+Book(Hello World,Eight_Eggs) constructor!
+
+in global print(): about to call virtual member function print() ...
+
+Book::print(): I am a Book object!
+
+My title is: Unkonwn, My author is: Unknown
+
+in global print(): about to call virtual member function print() ...
+
+Book::print(): I am a Book object!
+
+My title is: Hello World, My author is: Eight_Eggs
+
+Book destructor!
+
+LibMat destructor!
+
+Book destructor!
+
+LibMat destructor!
+
