@@ -7,4 +7,4 @@
 -------
 >*For Eight_Eggs:*
 >
->This repo is for personal use to practice C++ prpgramming.
+>This repo is for personal use to practice C++ programming.
