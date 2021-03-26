@@ -29,7 +29,7 @@ void print(const LibMat& mat)
 // 定义派生类Book
 class Book :public LibMat {
 public:
-	Book() {};
+	Book() { cout << "Book default constructor!\n\n"; }
 	Book(const string& title, const string& author) :_title(title), _author(author)
 	{
 		cout << "Book(" << _title << "," << _author << ") constructor!\n\n";
@@ -40,12 +40,34 @@ public:
 	{
 		cout << "Book::print(): I am a Book object!\n\n"
 			<< "My title is: " << _title
-			<< ", My author is: " << _author << endl <<endl;
+			<< ", My author is: " << _author << endl << endl;
 	}
 
 protected:
 	string _title = "Unkonwn";
 	string _author = "Unknown";
+};
+
+// 再定义一个派生类AudiBook
+class AudiBook :public Book {
+public:
+	AudiBook() { cout << "AudiBook default constructor!\n\n"; }
+	AudiBook(const string& title, const string& author, const string& reader) :
+		Book(title, author), _reader(reader)
+	{
+		cout << "AudiBook(title,author,reader) constructer!\n\n";
+	}
+	virtual ~AudiBook() { cout << "AudiBook desrtuctor!\n\n"; }
+	virtual void print() const
+	{
+		cout << "AudiBook::print(): I am a AudiBook object!\n\n"
+			<< "My title is: " << _title
+			<< ", My author is: " << _author   // _title和_author可以直接访问
+			<< ", My reader is:  " << _reader << endl << endl;
+	}
+
+protected:
+	string _reader = "Unknown";
 };
 
 // 接下来看看会发生什么有趣的事情吧:)
@@ -55,8 +77,10 @@ int main()
 
 	Book a;
 	Book b("Hello World", "Eight_Eggs");
+	AudiBook c("Hello World 2","Eight_Eggs","Asaka");
 	print(a);
 	print(b);
-	
+	print(c);
+
 	return 0;
 }
