@@ -53,10 +53,19 @@ class AudiBook :public Book {
 public:
 	AudiBook() { cout << "AudiBook default constructor!\n\n"; }
 	AudiBook(const string& title, const string& author, const string& reader) :
-		Book(title, author), _reader(reader)
+		Book(title, author), _reader(reader) // Why use Book(title,author) to initalize member data?
 	{
 		cout << "AudiBook(title,author,reader) constructer!\n\n";
 	}
+	/*See...If coding like this:
+	* AudiBook(const string& title, const string& author, const string& reader) : _title(title), _author(author), _reader(reader) {//...}
+	* It will cause an error: _title and _author are not the member data of AudiBook.
+	* But why? They should have been inherited from Book, right?
+	* Yes, they do have, but initializing like this is invalid.
+	* Detailed information can be found here:
+	* https://blog.csdn.net/L_Andy/article/details/80191619
+	*/
+
 	virtual ~AudiBook() { cout << "AudiBook desrtuctor!\n\n"; }
 	virtual void print() const
 	{
