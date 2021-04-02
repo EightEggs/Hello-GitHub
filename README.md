@@ -8,3 +8,5 @@
 >*For Eight_Eggs:*
 >
 >This repo is for personal use to practice C++ programming.
+>
+>Every source file is single-used and independent, named as "note_x.cpp".
