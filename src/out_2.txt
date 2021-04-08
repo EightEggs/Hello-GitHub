@@ -1,0 +1,20 @@
+A default person was born.
+Chihara was born. Height is 55, weight is 3.5.
+<Unknown> ate apple*1.
+Now, height is 50.92, weight is 3.88.
+Chihara ate strawberry*9.
+Now, height is 56.56, weight is 5.02.
+<Unknown> had a good sleep.
+Now, height is 51.655
+Chihara had a good sleep.
+Now, height is 57.295
+<Unknown> just grew up.
+Now, age is 1.
+Chihara just grew up.
+Now, age is 1.
+Chihara just grew up.
+Now, age is 2.
+<Unknown> was killed by an unknown force.
+<Unknown> passed away.
+Chihara passed away.
+ passed away.

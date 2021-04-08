@@ -94,6 +94,5 @@ int main()
 	p2.grow();
 	p1.kill();
 
-	getchar();
 	return 0;
 }
