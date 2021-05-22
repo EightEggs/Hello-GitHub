@@ -51,3 +51,4 @@
 *.ilk
 *.log
 /x64/Debug/Hello-GitHub.vcxproj.FileListAbsolute.txt
+/Hello-GitHub/x64/Debug/Hello-GitHub.vcxproj.FileListAbsolute.txt
